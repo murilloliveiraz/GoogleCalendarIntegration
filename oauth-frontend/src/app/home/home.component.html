@@ -1,0 +1,27 @@
+<form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="summary">Título:</label>
+      <input id="summary" formControlName="summary" type="text" />
+    </div>
+
+    <div>
+      <label for="description">Descrição:</label>
+      <input id="description" formControlName="description" type="text" />
+    </div>
+
+    <div>
+      <label for="start">Data e Hora de Início:</label>
+      <input id="start" formControlName="start" type="datetime-local" />
+    </div>
+
+    <div>
+      <label for="end">Data e Hora de Termino:</label>
+      <input id="end" formControlName="end" type="datetime-local" />
+    </div>
+
+    <button type="submit" [disabled]="!eventForm.valid">Enviar</button>
+  </form>
+
+
+<button (click)="refreshAccessToken()">Refresh Token</button>
+<button (click)="verify()">verify </button>
