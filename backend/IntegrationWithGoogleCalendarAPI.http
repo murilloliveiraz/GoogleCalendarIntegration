@@ -1,0 +1,6 @@
+@IntegrationWithGoogleCalendarAPI_HostAddress = http://localhost:5147
+
+GET {{IntegrationWithGoogleCalendarAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
